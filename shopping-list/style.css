@@ -1,0 +1,61 @@
+/* CSS Stylesheet */
+
+* { box-sizing: border-box; }
+body {font-family: Arial, Helvetica, sans-serif;
+margin: 0;
+padding: 0;
+}
+
+.container {
+max-width: 600px;
+margin: 24px auto;
+padding: 16px;
+}
+
+.controls {
+display: flex;
+gap: 8px;
+margin-bottom: 16px;
+}
+
+#item-input {
+flex: 1;
+padding: 8px;
+}
+
+#add-btn {
+padding: 8px 12px;
+}
+
+.list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.list li {
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 8px 0;
+border-bottom: 1px solid #ddd;
+}
+
+.item-text { flex: 1; }
+
+.list button {
+padding: 6px 10px;
+}
+
+
+/* Hide the text label */
+.visually-hidden {
+position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip: rect(0, 0, 1px, 1px);
+border: 0;
+}
