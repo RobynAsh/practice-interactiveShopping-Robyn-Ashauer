@@ -1,0 +1,137 @@
+/* CSS Stylesheet */
+* { box-sizing: border-box; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f8fb;
+  color: #222;
+}
+
+.container {
+  max-width: 620px;
+  margin: 32px auto;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #e6e9ef;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+}
+
+h1 {
+  margin: 0 0 16px 0;
+  font-size: 1.6rem;
+}
+
+.controls {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+#item-input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+  background: #fff;
+  outline: none;
+}
+
+#item-input:focus {
+  border-color: #5aa7ff;
+  box-shadow: 0 0 0 3px rgba(90,167,255,0.2);
+}
+
+#add-btn {
+  padding: 10px 14px;
+  border: 1px solid #2d7ff9;
+  background: #2d7ff9;
+  color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#add-btn:hover {
+  background: #206cf0;
+  border-color: #206cf0;
+}
+
+#add-btn:active {
+  transform: translateY(1px);
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 12px;
+  border: 1px solid #e6e9ef;
+  border-radius: 10px;
+  background: #fbfcfe;
+  margin-bottom: 10px;
+}
+
+.item-text {
+  flex: 1;
+}
+
+.edit-input {
+  flex: 1;
+  padding: 8px 10px;
+  border: 1px solid #cfd8e3;
+  border-radius: 8px;
+}
+
+.edit-input:focus {
+  border-color: #5aa7ff;
+  box-shadow: 0 0 0 3px rgba(90,167,255,0.2);
+}
+
+.list button {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d0d7e2;
+  background: #fff;
+  cursor: pointer;
+}
+
+.list button:hover {
+  background: #f1f4f9;
+}
+
+.edit-btn {
+  border-color: #2d7ff9;
+  color: #2d7ff9;
+}
+
+.edit-btn:hover {
+  background: #e8f1ff;
+}
+
+.remove-btn {
+  border-color: #ef6262;
+  color: #ef6262;
+}
+
+.remove-btn:hover {
+  background: #ffecec;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 1px, 1px);
+  border: 0;
+}
