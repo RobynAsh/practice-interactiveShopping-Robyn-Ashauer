@@ -57,7 +57,6 @@ return;
 if (target.classList.contains('edit-btn')) {
 const li = target.parentElement;
 
-// If the button says Edit, switch to edit mode
 if (target.textContent === 'Edit') {
 const span = li.querySelector('.item-text');
 
@@ -70,7 +69,7 @@ li.replaceChild(input, span);
 target.textContent = 'Save';
 input.focus();
 } else {
-// The button says Save, so save the new text
+
 const input = li.querySelector('.edit-input');
 const newText = input.value.trim();
 
